@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Daily Grind — Coffee, Community & a Little Bit of Magic</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">☕</span>
+        <span class="logo-text">The Daily Grind</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#location">Visit Us</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         SECTION 1 — HERO
+    ============================================================ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img
+          src="https://picsum.photos/1600/900?grayscale&blur=1"
+          alt="cafe interior placeholder — warm morning light"
+          class="hero-bg-img"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content container">
+        <p class="hero-eyebrow">Est. 2014 · Downtown</p>
+        <h1 class="hero-title">The Daily Grind</h1>
+        <p class="hero-tagline">Coffee, community, and a little bit of magic.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">View Menu</a>
+          <a href="#location" class="btn btn-outline">Visit Us</a>
+        </div>
+      </div>
+      <a href="#about" class="hero-scroll-hint" aria-label="Scroll down">
+        <span class="scroll-arrow">↓</span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2 — ABOUT
+    ============================================================ -->
+    <section class="about section" id="about">
+      <div class="container about-inner">
+        <div class="about-image-wrap">
+          <img
+            src="https://picsum.photos/600/700?random=10"
+            alt="cafe interior placeholder — cozy seating area"
+            class="about-img"
+          />
+          <div class="about-badge">
+            <span class="badge-num">12+</span>
+            <span class="badge-label">Years of<br>Good Coffee</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-label">Our Story</p>
+          <h2 class="section-title">More than coffee —<br>a place to belong.</h2>
+          <p>
+            The Daily Grind was born from a simple idea: everyone deserves a warm corner of the world
+            to call their own. Since 2014, we've been roasting our beans in-house, baking everything
+            fresh every morning, and building a community one cup at a time.
+          </p>
+          <p>
+            We source our single-origin beans directly from small farms in Ethiopia, Colombia, and
+            Guatemala — because great coffee starts long before it reaches your cup. Pull up a chair,
+            stay as long as you like, and let us take care of the rest.
+          </p>
+          <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3 — MENU
+    ============================================================ -->
+    <section class="menu section" id="menu">
+      <div class="container">
+        <p class="section-label">What We Serve</p>
+        <h2 class="section-title">Our Menu</h2>
+        <p class="section-subtitle">Everything made with love, locally sourced where possible.</p>
+
+        <!-- Tabs -->
+        <div class="menu-tabs" role="tablist">
+          <button class="menu-tab active" role="tab" data-tab="drinks" aria-selected="true">
+            ☕ Coffee &amp; Drinks
+          </button>
+          <button class="menu-tab" role="tab" data-tab="food" aria-selected="false">
+            🥗 Food
+          </button>
+          <button class="menu-tab" role="tab" data-tab="pastries" aria-selected="false">
+            🥐 Pastries
+          </button>
+        </div>
+
+        <!-- Coffee & Drinks -->
+        <div class="menu-panel active" id="tab-drinks" role="tabpanel">
+          <div class="menu-grid">
+
+            <div class="menu-card featured">
+              <div class="menu-card-img-wrap">
+                <img src="https://picsum.photos/400/300?random=20" alt="latte placeholder" />
+                <span class="menu-card-tag">Fan Favourite</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>House Latte</h3>
+                  <span class="price">$5.50</span>
+                </div>
+                <p>Our signature espresso with silky steamed whole milk and a hint of vanilla.</p>
+              </div>
+            </div>
+
+            <div class="menu-card featured">
+              <div class="menu-card-img-wrap">
+                <img src="https://picsum.photos/400/300?random=21" alt="cold brew placeholder" />
+                <span class="menu-card-tag">New</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Slow-Drip Cold Brew</h3>
+                  <span class="price">$6.00</span>
+                </div>
+                <p>Steeped for 18 hours. Smooth, bold, and deeply satisfying over ice.</p>
+              </div>
+            </div>
+
+            <div class="menu-card">
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Flat White</h3>
+                  <span class="price">$5.00</span>
+                </div>
+                <p>Ristretto shots with a micro-foamed milk pour. Intense and creamy.</p>
+              </div>
+            </div>
+
+            <div class="menu-card">
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Honey Oat Cappuccino</h3>
+                  <span class="price">$6.00</span>
+                </div>
+                <p>Locally sourced wildflower honey swirled into oat-milk foam. A cozy classic.</p>
+              </div>
+            </div>
+
+            <div class="menu-card">
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Matcha Latte</h3>
+                  <span class="price">$5.75</span>
+                </div>
+                <p>Ceremonial-grade matcha whisked with your choice of milk. Earthy and calming.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Food -->
+        <div class="menu-panel" id="tab-food" role="tabpanel">
+          <div class="menu-grid">
+
+            <div class="menu-card featured">
+              <div class="menu-card-img-wrap">
+                <img src="https://picsum.photos/400/300?random=30" alt="avocado toast placeholder" />
+                <span class="menu-card-tag">Bestseller</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Avocado Toast</h3>
+                  <span class="price">$12.00</span>
+                </div>
+                <p>Sourdough, smashed avocado, heirloom tomatoes, chili flakes, microgreens.</p>
+              </div>
+            </div>
+
+            <div class="menu-card featured">
+              <div class="menu-card-img-wrap">
+                <img src="https://picsum.photos/400/300?random=31" alt="breakfast bowl placeholder" />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Grind Breakfast Bowl</h3>
+                  <span class="price">$14.00</span>
+                </div>
+                <p>Soft scrambled eggs, roasted sweet potato, feta, spinach &amp; tahini drizzle.</p>
+              </div>
+            </div>
+
+            <div class="menu-card">
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Grilled Halloumi Wrap</h3>
+                  <span class="price">$13.50</span>
+                </div>
+                <p>Warm flatbread, halloumi, roasted peppers, hummus, and a lemon herb salad.</p>
+              </div>
+            </div>
+
+            <div class="menu-card">
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Seasonal Soup &amp; Bread</h3>
+                  <span class="price">$10.00</span>
+                </div>
+                <p>Chef's daily soup with a thick-cut sourdough slice. Warm and restorative.</p>
+              </div>
+            </div>
+
+            <div class="menu-card">
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Smoked Salmon Bagel</h3>
+                  <span class="price">$15.00</span>
+                </div>
+                <p>Everything bagel, cream cheese, smoked salmon, capers, red onion, dill.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Pastries -->
+        <div class="menu-panel" id="tab-pastries" role="tabpanel">
+          <div class="menu-grid">
+
+            <div class="menu-card featured">
+              <div class="menu-card-img-wrap">
+                <img src="https://picsum.photos/400/300?random=40" alt="croissant placeholder" />
+                <span class="menu-card-tag">Baked Fresh Daily</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Butter Croissant</h3>
+                  <span class="price">$4.50</span>
+                </div>
+                <p>78 layers of laminated dough. Golden, flaky perfection. Need we say more?</p>
+              </div>
+            </div>
+
+            <div class="menu-card featured">
+              <div class="menu-card-img-wrap">
+                <img src="https://picsum.photos/400/300?random=41" alt="cinnamon roll placeholder" />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Brown Butter Cinnamon Roll</h3>
+                  <span class="price">$5.50</span>
+                </div>
+                <p>Pillowy dough, caramelised brown butter filling, cream cheese glaze.</p>
+              </div>
+            </div>
+
+            <div class="menu-card">
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Almond Raspberry Tart</h3>
+                  <span class="price">$6.00</span>
+                </div>
+                <p>Buttery shortcrust, almond frangipane, and a jam of seasonal raspberries.</p>
+              </div>
+            </div>
+
+            <div class="menu-card">
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Banana Walnut Loaf</h3>
+                  <span class="price">$4.00</span>
+                </div>
+                <p>Dense, moist, and fragrant. Toasted with a little butter — chef's suggestion.</p>
+              </div>
+            </div>
+
+            <div class="menu-card">
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3>Dark Chocolate Brownie</h3>
+                  <span class="price">$4.50</span>
+                </div>
+                <p>Fudgy centre, crinkle top, 72% cacao. Pairs beautifully with our espresso.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4 — GALLERY
+    ============================================================ -->
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <p class="section-label">A Glimpse Inside</p>
+        <h2 class="section-title">Life at The Daily Grind</h2>
+        <p class="section-subtitle">Every corner tells a story.</p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-item--tall">
+            <img src="https://picsum.photos/600/800?random=50" alt="cafe interior placeholder — main seating area" />
+            <div class="gallery-overlay"><span>Interior</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://picsum.photos/600/400?random=51" alt="latte art placeholder — morning coffee" />
+            <div class="gallery-overlay"><span>Latte Art</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://picsum.photos/600/400?random=52" alt="pastry display placeholder" />
+            <div class="gallery-overlay"><span>Pastries</span></div>
+          </div>
+          <div class="gallery-item gallery-item--wide">
+            <img src="https://picsum.photos/900/500?random=53" alt="cafe bar placeholder — espresso machine" />
+            <div class="gallery-overlay"><span>The Bar</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://picsum.photos/600/400?random=54" alt="outdoor seating placeholder" />
+            <div class="gallery-overlay"><span>Outdoor Seating</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://picsum.photos/600/400?random=55" alt="food dish placeholder — breakfast" />
+            <div class="gallery-overlay"><span>Food</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://picsum.photos/600/400?random=56" alt="cozy corner placeholder — reading nook" />
+            <div class="gallery-overlay"><span>Reading Nook</span></div>
+          </div>
+          <div class="gallery-item gallery-item--tall">
+            <img src="https://picsum.photos/600/800?random=57" alt="barista placeholder — coffee craft" />
+            <div class="gallery-overlay"><span>Our Team</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5 — TESTIMONIALS
+    ============================================================ -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <p class="section-label">What People Say</p>
+        <h2 class="section-title">Warm words from our regulars</h2>
+
+        <div class="testimonials-grid">
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>
+              "The Daily Grind is my office away from office. The latte is consistently perfect,
+              the team remembers my order, and somehow the music is always exactly right. It's
+              become my favourite part of every morning."
+            </blockquote>
+            <div class="testimonial-author">
+              <img
+                src="https://picsum.photos/80/80?random=60"
+                alt="customer photo placeholder — Sarah M."
+                class="testimonial-avatar"
+              />
+              <div>
+                <strong>Sarah M.</strong>
+                <span>Regular since 2018</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card testimonial-card--featured">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>
+              "I've been to cafes all over the world, and The Daily Grind stands right up there
+              with the best. The slow-drip cold brew alone is worth the trip, and the cinnamon
+              roll? Life-changing. Genuinely."
+            </blockquote>
+            <div class="testimonial-author">
+              <img
+                src="https://picsum.photos/80/80?random=61"
+                alt="customer photo placeholder — James T."
+                class="testimonial-avatar"
+              />
+              <div>
+                <strong>James T.</strong>
+                <span>Food &amp; Travel Blogger</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>
+              "I hosted a small birthday brunch here and the staff went above and beyond to make
+              it special. The food was beautiful, the space was perfect, and everyone left raving
+              about the coffee. Can't recommend it enough."
+            </blockquote>
+            <div class="testimonial-author">
+              <img
+                src="https://picsum.photos/80/80?random=62"
+                alt="customer photo placeholder — Priya K."
+                class="testimonial-avatar"
+              />
+              <div>
+                <strong>Priya K.</strong>
+                <span>Event Planner</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6 — LOCATION & HOURS
+    ============================================================ -->
+    <section class="location section" id="location">
+      <div class="container">
+        <p class="section-label">Find Us</p>
+        <h2 class="section-title">Come Say Hello</h2>
+
+        <div class="location-inner">
+
+          <div class="location-info">
+            <div class="info-block">
+              <h3>📍 Address</h3>
+              <address>
+                42 Maple Street<br />
+                The Arts Quarter<br />
+                Portland, OR 97201
+              </address>
+              <a href="#" class="btn btn-outline btn-sm">Get Directions</a>
+            </div>
+
+            <div class="info-block">
+              <h3>🕐 Opening Hours</h3>
+              <table class="hours-table">
+                <tbody>
+                  <tr>
+                    <td>Monday – Friday</td>
+                    <td>7:00 am – 7:00 pm</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>8:00 am – 8:00 pm</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>8:00 am – 6:00 pm</td>
+                  </tr>
+                  <tr class="hours-note">
+                    <td colspan="2">Kitchen closes 30 min before closing.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="info-block">
+              <h3>📞 Get in Touch</h3>
+              <p>(503) 555-0174</p>
+              <p><a href="mailto:hello@thedailygrind.co">hello@thedailygrind.co</a></p>
+            </div>
+          </div>
+
+          <div class="location-map">
+            <img
+              src="https://placehold.co/700x450/d4c3b0/6f4e37?text=Map+Placeholder%0A42+Maple+Street%2C+Portland+OR"
+              alt="map placeholder — 42 Maple Street Portland"
+              class="map-img"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 7 — CONTACT / FOOTER
+    ============================================================ -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="section-title">We'd Love to Hear from You</h2>
+        <p class="section-subtitle">For reservations, events, wholesale enquiries, or just to say hi.</p>
+
+        <div class="contact-inner">
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  placeholder="Jane Doe"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  placeholder="jane@example.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input
+                type="text"
+                id="contact-subject"
+                name="subject"
+                placeholder="e.g. Event Enquiry"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="5"
+                placeholder="Tell us how we can help..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message ✉</button>
+            <p class="form-success" id="form-success" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-aside">
+            <h3>Follow Along</h3>
+            <p>Stay up to date with specials, events, and daily behind-the-scenes.</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                Instagram
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                Facebook
+              </a>
+              <a href="#" class="social-link" aria-label="TikTok">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+                TikTok
+              </a>
+            </div>
+
+            <div class="newsletter-block">
+              <h3>Stay in the Loop</h3>
+              <p>Monthly newsletter: seasonal menus, events, and stories from the grind.</p>
+              <form class="newsletter-form" id="newsletter-form" novalidate>
+                <input type="email" placeholder="your@email.com" aria-label="Email for newsletter" required />
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">☕</span>
+        <span class="logo-text">The Daily Grind</span>
+        <p>Coffee, community, and a little bit of magic.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">
+        &copy; <span id="footer-year"></span> The Daily Grind. All rights reserved.
+        <br /><small>This is a sample/demo website. All images are placeholders.</small>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
